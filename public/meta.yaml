@@ -5,9 +5,24 @@ type: flutter
 
 # Configuration for each step 
 steps:
-  - name: Step 1
+  - name: Introducción
     directory: step_01
-    has_solution: true
-  - name: Step 2
+    has_solution: false
+  - name: Preparación inicial
     directory: step_02
     has_solution: false
+  - name: Creando los componentes de nuestro formulario
+    directory: step_03
+    has_solution: true
+  - name: Creando nuestro formulario usando Form
+    directory: step_04
+    has_solution: true
+  - name: TextEditingController y Validaciones con Regex
+    directory: step_05
+    has_solution: true
+  - name: onChanged, onSubmitted & onEditingCompleted
+    directory: step_06
+    has_solution: true
+  - name: Challenge 1
+    directory: step_07
+    has_solution: true

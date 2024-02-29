@@ -1,21 +1,37 @@
 import 'package:flutter/material.dart';
 
-const hostingUrl = 'https://dartpad-workshops-io2021.web.app';
-
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var title = 'Web Images';
-
     return MaterialApp(
-      title: title,
+      theme: ThemeData.light(),
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(title),
+        body: Container(
+          alignment: Alignment.center,
+          padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+          child: Column(children: [
+            const TextField(
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(),
+                hintText: '¿Qué estás buscando? 👀',
+              ),
+            ),
+            const SizedBox(height: 8),
+            TextFormField(
+              decoration: const InputDecoration(
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(),
+                hintText: '¿Qué estás buscando? 👀',
+              ),
+            )
+          ]),
         ),
-        body: Image.network('$hostingUrl/example_flutter/images/dash.png'),
       ),
     );
   }

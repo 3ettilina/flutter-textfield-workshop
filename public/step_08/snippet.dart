@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// TODO: Elimina la línea debajo
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
 void main() {
@@ -10,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // TODO: Cambia la declaración debajo para que el theme sea light usando únicamente ThemeData.light() como valor.
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: darkBlue,
       ),
@@ -32,3 +34,4 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
+
